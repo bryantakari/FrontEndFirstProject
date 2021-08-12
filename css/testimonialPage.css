@@ -1,0 +1,59 @@
+.test-head{
+    width:600px;
+    margin:auto;
+}
+
+.test-head>h1,p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.test-body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.test-card{
+    border-radius: 10px;
+    background-color: #A5E9E1;
+    width: 400px;
+    height: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.comment{
+    width:250px;
+    margin: auto;
+}
+.comment>p{
+    font-size: 16pt;
+}
+.circle2>img{
+    width:150px;
+    height:150px;
+
+}
+.circle2{
+    width:fit-content;
+    height:fit-content;
+}
+
+
+.test-card>.circle1{
+    background-color: rgba(77, 77, 153, 0.678);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px){
+    .test-head{
+        width: 400px;
+    }
+}

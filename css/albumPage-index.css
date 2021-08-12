@@ -1,0 +1,64 @@
+.sub-bar>h1{
+    font-weight: 900;
+    color:#388186;
+}
+.album-head>a{
+    text-decoration: none;
+    color:#4D5357;
+    position: absolute;
+    left:30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.album-body{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.album-body>.card-album>.card-description>.stars{
+    color:#FFCE31;
+    display: flex;
+    font-size:40px;
+    align-items: center;
+}
+.album-body>.card-album>.card-description>.stars>p{
+    color:black;
+    font-size: 10pt;
+}
+.card-album>.card-description>p{
+    font-size:20px;
+}
+.card-album{
+    border-radius: 20px;
+    overflow: hidden;
+    border:1px solid black;
+}
+.card-description{
+    margin-top: 15px;
+    margin-left:30px;
+    margin-bottom: 15px;
+}
+.card-album>div>img{
+    width:400px;
+    height:500px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+}
+
+@media (min-width:600px) and (max-width : 1200px){
+    
+    .album-body{
+        display:grid;
+        row-gap: 50px;
+    }
+    
+
+}
+
+@media screen and (max-width:600px){
+    .album-head>a{
+        font-size: 20pt;
+    }
+}
+

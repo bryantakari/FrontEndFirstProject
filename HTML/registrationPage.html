@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/registrationPage.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/temptest.js"></script>
+</head>
+
+<body>
+    <form onsubmit="validation();return false;" action="" name="registerForm">
+        <header>
+            <div class="header-items">
+                <div class="logo">
+                    <img src="../assets/Logo.png" alt="tttt" srcset="">
+                </div>
+                <div class="headerText">
+                    <h1>1st hand K-Pop merchandise</h1>
+                </div>
+            </div>
+            <div class="header-items">
+                <div class="search-items">
+                    <div class="input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="btn">
+                        <button><img src="../assets/icon/loupe.png" alt="" srcset=""></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="navbar">
+                <div class="item-left">
+                    <a href="./homePage.html">Home</a>
+                </div>
+                <div class="item-left">
+                    <a href="./testimonialPage.html">Testimonial</a>
+                </div>
+                <div class="item-left dropdown">
+                    <a href="./albumPage-home.html">K-Pop Albums Catalog</a>
+                    <div>
+                        <div><a href="./albumPage-home.html">Boy Group</a></div>
+                        <div><a href="./albumPage-home.html">Girl Group</a></div>
+                        <div><a href="./albumPage-home.html">Soloist</a></div>
+                    </div>
+                </div>
+                <div class="item-left dropdown">
+                    <a href="./merchandisePage-home.html">Merchandise Catalog</a>
+                    <div>
+                        <div><a href="./merchandisePage-home.html">Boy Group</a></div>
+                        <div><a href="./merchandisePage-home.html">Girl Group</a></div>
+                        <div><a href="./merchandisePage-home.html">Soloist</a></div>
+                    </div>
+                </div>
+                <div class="item-right">
+                    <a href="./registrationPage.html">Register</a>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="navdd">
+                <div class="search-items">
+                    <div class="input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="btn">
+                        <button><img src="../assets/icon/loupe-black.png" alt="" srcset=""></button>
+                    </div>
+                </div>
+                <div class="logo-nav">
+                    <a href=""><img src="../assets/icon/navbarIcon-black.jpg" alt="" srcset=""></a>
+                    <div class="navdd-items">
+                        <div class="item">
+                            <a href="./homePage.html">Home</a>
+                        </div>
+                        <div class="item">
+                            <a href="./testimonialPage.html">Testimonial</a>
+                        </div>
+                        <div class="item">
+                            <a href="./albumPage-home.html">K-Pop Albums Catalog</a>
+                        </div>
+                        <div class="item">
+                            <a href="./merchandisePage-home.html">Merchandise Catalog</a>
+                        </div>
+                        <div class="item">
+                            <a href="./registrationPage.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+        <div class="layout">
+            <div class="register-container">
+                <div class="register-title">
+                    <h1>Registration</h1>
+                </div>
+                <hr>
+                <div class="register-body">
+                    <div class="input-type">
+                        <label for="name">Name</label><p id="error-name"></p>
+                        <br>
+                        <input type="text" name="name" placeholder="Enter your full name..." id="name">
+                    </div>
+                    <div class="input-type">
+                        <label for="user">Username</label><p id="error-username"></p>
+                        <br>
+                        <input type="text" name="user" placeholder="Enter your full username..." id="username">
+
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label><p id="error-gender"></p>
+                        <div>
+                            <input type="radio" name="gender" id="male" value="Male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="nobinary" value="NonBinary">
+                            <label for="nobinary">Non-binary</label>
+                        </div>
+                    </div>
+                    <div class="input-type">
+                        <label for="">Age</label><p id="error-age"></p>
+                        <br>
+                        <input type="text" name="age" placeholder="Enter your Age..." id="age">
+                    </div>
+                    <div class="input-type">
+                        <label for="">Email</label><p id="error-email"></p>
+                        <br>
+                        <input type="email" name="email" placeholder="Enter your email..." id="email">
+                    </div>
+                    <div class="input-type">
+                        <label for="">Password</label><p id="error-password"></p>
+                        <br>
+                        <input type="password" placeholder="Enter your password..." name="password" id="password">
+                    </div>
+                    <div class="input-type">
+                        <label for="">Confirm Password</label><p id="error-confirmPassword"></p>
+                        <br>
+                        <input type="password" name="confirmPassword" onchange="" placeholder="Enter your password again..." id="confirmPassword">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="">agree with terms and conditions</label>
+                        <p id="error-agree"></p>
+                    </div>
+                    <br>
+                    <button id="register-btn" type="submit">Register</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <footer>
+        <div class="footer1">
+            <div class="address">
+                <h3>Address</h3>
+                <p>102 Del Luna Street</p>
+                <p>Mountain Hill, SC29776</p>
+                <p>Indonesia</p>
+            </div>
+
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>02112345678</p>
+                <p>DelLuna@yahoo.com</p>
+            </div>
+            <div class="social-media">
+                <h3>Social</h3>
+                <div class="link">
+                    <a href="http://"> <img src="../assets/icon/ig-icon.png" alt="instagram" srcset=""></a>
+                    <a href="http://"><img src="../assets/icon/facebook.png" alt="facebook" srcset=""></a>
+                    <a href="http://"><img src="../assets/icon/line-icon.png" alt="line" srcset=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <p> &#169; 2013 - 2021 Del Luna All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
